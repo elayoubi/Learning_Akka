@@ -1,0 +1,20 @@
+New log file opened at Fri Sep 16 10:04:22 EDT 2016 by 39347@Hanias-MacBook-Pro.local
+Sending msg to client activator-0ba41343-567f-42d2-baf4-11c7f121a8c7: DetachedLogEvent(LogMessage(debug,sbt client logs are in: /Users/elayoubi/Educational/akka/Learning_Akka/.sbtserver/connections/activator-0ba41343-567f-42d2-baf4-11c7f121a8c7.log))
+Reading next message from client.
+Client activator-0ba41343-567f-42d2-baf4-11c7f121a8c7 EOF, shutting down.
+Stopping client.
+Dropping message (0,ReceivedResponse()) to dead client activator-0ba41343-567f-42d2-baf4-11c7f121a8c7
+Sending msg to client activator-0ba41343-567f-42d2-baf4-11c7f121a8c7: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: /Users/elayoubi/Educational/akka/Learning_Akka/.sbtserver/connections/master.log))
+Dropping message DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: /Users/elayoubi/Educational/akka/Learning_Akka/.sbtserver/connections/master.log)) because client activator-0ba41343-567f-42d2-baf4-11c7f121a8c7 of an exception serializing and sending: java.net.SocketException: socket is closed
+stack trace sending message was 
+java.net.SocketException: socket is closed
+	at sbt.impl.ipc.Peer.send(IPC.scala:74)
+	at sbt.impl.ipc.Peer.send(IPC.scala:83)
+	at sbt.impl.ipc.Peer.sendString(IPC.scala:106)
+	at sbt.impl.ipc.Peer.sendJson(IPC.scala:119)
+	at sbt.server.SbtClientHandler$$anonfun$send$1.apply$mcV$sp(SbtClientHandler.scala:128)
+	at sbt.server.SbtClientHandler.wrappedSend(SbtClientHandler.scala:113)
+	at sbt.server.SbtClientHandler.send(SbtClientHandler.scala:128)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:91)
+Dropping message DetachedLogEvent(LogMessage(debug,sbt general server logs are in: /Users/elayoubi/Educational/akka/Learning_Akka/.sbtserver/master.log)) to dead client activator-0ba41343-567f-42d2-baf4-11c7f121a8c7
+Client activator-0ba41343-567f-42d2-baf4-11c7f121a8c7 thread exiting.
